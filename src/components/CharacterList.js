@@ -18,13 +18,23 @@ export default function CharacterList() {
   }, []);
 
   return (
-    <section className="character-list">
-      <h2>Characters!</h2>
-      <>
-        {character.map(characters => (
-          <CharacterCard info={characters} />
-        ))}
-      </>
-    </section>
+    <div>
+      {/* <form className="search">
+        <input
+          value={searchValue}
+          onChange={handleSearchInputChanges}
+          type="text"
+        />
+        <input onClick={callSearchFunction} type="submit" value="SEARCH" />
+      </form> */}
+      <section className="character-list">
+        <h2>Characters!</h2>
+        <>
+          {character.map(characters => (
+            <CharacterCard info={characters} />
+          ))}
+        </>
+      </section>
+    </div>
   );
 }

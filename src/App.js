@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/Header.js";
 import CharList from "./CharList";
-// import SearchForm from "./components/SearchForm";
 import WelcomePage from "./components/WelcomePage";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
