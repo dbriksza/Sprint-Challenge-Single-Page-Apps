@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./components/Header.js";
 import CharacterList from "./components/CharacterList";
+import SearchForm from "./components/SearchForm";
 
 const CharList = () => {
   return (
     <div>
-      <Header />
+      <SearchForm />
       <CharacterList />
     </div>
   );

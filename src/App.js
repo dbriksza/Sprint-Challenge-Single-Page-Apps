@@ -9,12 +9,11 @@ export default function App() {
   return (
     <main>
       <Header />
-      <WelcomePage />
+      <Route exact path="/" component={WelcomePage} />
+      <Route exact path="/CharList" component={CharList} />
       <Link to="/CharList" component={CharList}>
         <h2>Characters!</h2>
       </Link>
-      <Route exact path="/" component={WelcomePage} />
-      <Route exact path="/CharList" component={CharList} />
     </main>
   );
 }
