@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SearchForm = props => {
+function SearchForm() {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearchInputChanges = e => {
@@ -13,6 +13,7 @@ const SearchForm = props => {
 
   const callSearchFunction = e => {
     e.preventDefault();
+
     resetInputField();
   };
 
@@ -26,6 +27,6 @@ const SearchForm = props => {
       <input onClick={callSearchFunction} type="submit" value="SEARCH" />
     </form>
   );
-};
+}
 
 export default SearchForm;
